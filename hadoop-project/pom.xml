@@ -1072,14 +1072,14 @@
         <version>${maven-remote-resources-plugin.version}</version>
         <configuration>
           <resourceBundles>
-            <resourceBundle>org.apache.hadoop:hadoop-build-tools:${project.version}</resourceBundle>
+            <resourceBundle>org.apache.hadoop:hadoop-build-tools:${parent.version}</resourceBundle>
           </resourceBundles>
         </configuration>
         <dependencies>
           <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-build-tools</artifactId>
-            <version>${project.version}</version>
+            <version>${parent.version}</version>
           </dependency>
         </dependencies>
         <executions>
